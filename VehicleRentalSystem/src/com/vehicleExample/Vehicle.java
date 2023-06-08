@@ -1,0 +1,48 @@
+package com.vehicleExample;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public abstract class Vehicle implements VehicleOperations{
+	 protected String licensePlate;
+	    protected String make;
+	    protected String model;
+	    private boolean isAvailable;
+
+
+	    @Override
+	    public boolean isAvailable() {
+	        return isAvailable;
+	    }
+
+	    @Override
+	    public void setAvailable(boolean isAvailable) {
+	        this.isAvailable = isAvailable;
+	    }
+
+		public String getLicensePlate() {
+			return licensePlate;
+		}
+
+		public void setLicensePlate(String licensePlate) {
+			this.licensePlate = licensePlate;
+		}
+
+		public String getMake() {
+			return make;
+		}
+
+		public void setMake(String make) {
+			this.make = make;
+		}
+
+		public String getModel() {
+			return model;
+		}
+
+		public void setModel(String model) {
+			this.model = model;
+		}
+	    
+}
